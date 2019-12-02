@@ -14,7 +14,8 @@ slim = tf.contrib.slim
 HEIGHT, WIDTH, CHANNEL = 128, 128, 3
 BATCH_SIZE = 64
 EPOCH = 5000
-os.environ['CUDA_VISIBLE_DEVICES'] = '15'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
 version = 'modelOne'
 newPath = './' + version
 
@@ -262,4 +263,3 @@ def train():
 if __name__ == "__main__":
     train()
     # test()
-
