@@ -1,3 +1,5 @@
+pip install scipy==1.0.1
+
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/optimize_gpu.html
 
 sudo nvidia-persistenced
