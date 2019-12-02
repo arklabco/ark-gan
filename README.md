@@ -5,3 +5,7 @@ sudo nvidia-persistenced
 sudo nvidia-smi --auto-boost-default=0
 
 sudo nvidia-smi -ac 2505,875
+
+
+
+nvidia-smi
