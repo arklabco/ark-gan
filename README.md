@@ -13,3 +13,6 @@ sudo nvidia-smi -ac 2505,875
 nvidia-smi
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
+
+watch -n0.5 nvidia-smi
