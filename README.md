@@ -8,8 +8,11 @@ sudo nvidia-smi --auto-boost-default=0
 
 sudo nvidia-smi -ac 2505,875
 
-
-
 nvidia-smi
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
+source activate tensorflow_p36
+sudo nvidia-persistenced
+sudo nvidia-smi --auto-boost-default=0
+sudo nvidia-smi -ac 2505,875

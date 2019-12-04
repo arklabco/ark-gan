@@ -14,7 +14,7 @@ slim = tf.contrib.slim
 HEIGHT, WIDTH, CHANNEL = 128, 128, 3
 BATCH_SIZE = 64
 EPOCH = 5000
-os.environ['CUDA_VISIBLE_DEVICES'] = '8'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 version = 'modelOne'
 newPath = './' + version
 
@@ -171,7 +171,7 @@ def discriminator(input, is_train, reuse=False):
 
 def train():
     random_dim = 100
-    # print os.environ['CUDA_VISIBLE_DEVICES']
+    print(os.environ['CUDA_VISIBLE_DEVICES'])
     
     with tf.variable_scope('input'):
         real_image = tf.placeholder(tf.float32, shape = [None, HEIGHT, WIDTH, CHANNEL], name='real_image')
