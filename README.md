@@ -1,6 +1,8 @@
 pip install scipy==1.0.1
 
 
+dataset 74 images / 256x256
+
 zip -r -X archive_name.zip folder_to_compress
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/optimize_gpu.html
